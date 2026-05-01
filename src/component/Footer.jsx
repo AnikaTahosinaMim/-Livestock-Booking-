@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white px-6 py-10">
+    <footer className="bg-gray-900 text-white px-6 py-10 mt-4 ">
       <div className="grid md:grid-cols-3 gap-8">
-
         {/* About Section */}
         <div>
           <h2 className="text-xl font-bold mb-3">About Us</h2>
           <p className="text-sm text-gray-400">
-            We provide high-quality services and products to make your life easier.
-            Our goal is to build trust and deliver value.
+            We provide high-quality services and products to make your life
+            easier. Our goal is to build trust and deliver value.
           </p>
         </div>
 
@@ -27,13 +27,22 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-bold mb-3">Follow Us</h2>
           <div className="flex gap-4">
-            <Link href="#">Facebook</Link>
-            <Link href="#">Instagram</Link>
-            <Link href="#">Twitter</Link>
-            <Link href="#">LinkedIn</Link>
+            <Link href="#">
+              Facebook
+              <FaFacebook />{" "}
+            </Link>
+            <Link href="#">
+              Instagram <FaInstagram />{" "}
+            </Link>
+            <Link href="#">
+              Twitter <FaTwitter />{" "}
+            </Link>
+            <Link href="#">
+               LinkedIn
+              <FaLinkedin />{" "}
+            </Link>
           </div>
         </div>
-
       </div>
 
       {/* Bottom */}
