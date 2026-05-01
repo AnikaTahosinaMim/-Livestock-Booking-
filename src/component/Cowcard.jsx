@@ -5,9 +5,7 @@ import React from "react";
 const Cowcard = ({ cow }) => {
   return (
     <div className="border p-4 rounded-xl ">
-      
       <div className="relative w-full aspect-square">
-
         <Image
           src={cow.image}
           alt={cow.name}

@@ -11,7 +11,6 @@ const AnimalDetails = async ({ params }) => {
   console.log(animals);
   return (
     <div>
-      <h2 className="font-semibold text-4xl my-4">Animals details: </h2>
       <div className="flex flex-col md:flex-row gap-10 border p-3 rounded-xl shadow-lg my-8">
         <div className="relative w-[200px] aspect-square">
           <Image
@@ -52,7 +51,7 @@ const AnimalDetails = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="">
+      <div >
         <Booking></Booking>
       </div>
     </div>
