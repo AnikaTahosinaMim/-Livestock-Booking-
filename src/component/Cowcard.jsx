@@ -14,8 +14,8 @@ const Cowcard = ({ cow }) => {
           className="object-cover rounded-sm"
         />
       </div>
-      <p>{cow.location}</p>
-      <p>{cow.price}</p>
+      <p className="text-sm font-semibold">{cow.location}</p>
+      <p className="text-sm font-semibold">{cow.price}</p>
       <p className="text-pink-500 font-semibold">
         <Link href={`/all-animals/${cow.id}`}>view details</Link>
       </p>
