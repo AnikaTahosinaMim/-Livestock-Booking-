@@ -5,8 +5,14 @@ import React from "react";
 const Cowcard = ({ cow }) => {
   return (
     <div className="border p-4 rounded-xl ">
-      <div>
-        <Image src={cow.image} alt={cow.name} width={150} height={150} />
+      <div className="relative w-full aspect-square">
+        <Image
+          src={cow.image}
+          alt={cow.name}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover rounded-sm"
+        />
       </div>
       <p>{cow.location}</p>
       <p>{cow.price}</p>
