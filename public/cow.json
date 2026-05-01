@@ -8,21 +8,21 @@
     "weight": 280,
     "age": 3,
     "location": "Bogura",
-    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
-    "image": "https://i.postimg.cc/8cZQm9Yc/cow1.jpg",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
+    "image": "https://ibb.co.com/Q3p5jYfP",
     "category": "Large Animal"
   },
   {
     "id": 2,
-    "name": "Australian Friesian Cow",
+    "name": "Sahiwal Cow",
     "type": "Cow",
-    "breed": "Friesian",
-    "price": 180000,
-    "weight": 350,
+    "breed": "Sahiwal",
+    "price": 150000,
+    "weight": 320,
     "age": 4,
-    "location": "Sirajganj",
-    "description": "High-quality foreign breed cow with excellent স্বাস্থ্য.",
-    "image": "https://i.postimg.cc/4xjFQ0hL/cow2.jpg",
+    "location": "Rajshahi",
+    "description": "High quality Sahiwal cow, strong and healthy.",
+    "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80",
     "category": "Large Animal"
   },
   {
@@ -33,10 +33,10 @@
     "price": 25000,
     "weight": 35,
     "age": 2,
-    "location": "Rajshahi",
-    "description": "Popular goat breed in Bangladesh, খুব সুস্বাদু মাংস.",
-    "image": "https://i.postimg.cc/qR8zZzKx/goat1.jpg",
-    "category": "Medium Animal"
+    "location": "Kushtia",
+    "description": "Popular Black Bengal goat, খুব সুস্থ এবং কুরবানির জন্য ভালো।",
+    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80",
+    "category": "Small Animal"
   },
   {
     "id": 4,
@@ -47,34 +47,34 @@
     "weight": 50,
     "age": 3,
     "location": "Pabna",
-    "description": "Large size goat suitable for Qurbani and breeding.",
-    "image": "https://i.postimg.cc/V6ZrP7zB/goat2.jpg",
-    "category": "Medium Animal"
+    "description": "Large size Jamunapari goat, সুন্দর ও শক্তিশালী।",
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=800&q=80",
+    "category": "Small Animal"
   },
   {
     "id": 5,
     "name": "Deshi Sheep",
     "type": "Sheep",
     "breed": "Local",
-    "price": 20000,
+    "price": 18000,
     "weight": 30,
     "age": 2,
-    "location": "Naogaon",
-    "description": "Healthy sheep with ভালো মানের মাংস.",
-    "image": "https://i.postimg.cc/3xYF8J2s/sheep1.jpg",
-    "category": "Medium Animal"
+    "location": "Mymensingh",
+    "description": "Healthy sheep suitable for small Qurbani.",
+    "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80",
+    "category": "Small Animal"
   },
   {
     "id": 6,
-    "name": "White Rabbit",
-    "type": "Rabbit",
-    "breed": "New Zealand White",
-    "price": 5000,
-    "weight": 4,
-    "age": 1,
+    "name": "Holstein Friesian Cow",
+    "type": "Cow",
+    "breed": "Holstein Friesian",
+    "price": 200000,
+    "weight": 400,
+    "age": 5,
     "location": "Dhaka",
-    "description": "Cute pet rabbit, friendly and easy to maintain.",
-    "image": "https://i.postimg.cc/Fz1y2RzS/rabbit1.jpg",
-    "category": "Small Animal"
+    "description": "Imported breed, বড় এবং ভালো মানের গরু।",
+    "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+    "category": "Large Animal"
   }
 ]

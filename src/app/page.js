@@ -1,5 +1,14 @@
-import Image from "next/image";
+import Animal from "@/component/Animal";
+import Banner from "@/component/Banner";
+import React from "react";
 
-export default function Home() {
-  return <h3>Homepages</h3>;
-}
+const Home = () => {
+  return (
+    <div>
+      <Banner></Banner>
+      <Animal></Animal>
+    </div>
+  );
+};
+
+export default Home;
