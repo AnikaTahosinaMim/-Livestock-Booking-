@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  
   return (
     <footer className="bg-gray-900 text-white px-6 py-10 mt-4 ">
       <div className="grid md:grid-cols-3 gap-8">
