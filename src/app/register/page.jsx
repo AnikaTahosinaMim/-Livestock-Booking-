@@ -11,34 +11,46 @@ import {
 } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
 import toast, { Toaster } from "react-hot-toast";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
-const LoginPages = () => {
-  const handleLogin = async (e) => {
+const LogOut = () => {
+  const router = useRouter();
+  const handleRegsister = async (e) => {
     e.preventDefault();
+    const name = e.target.name.value;
     const password = e.target.password.value;
     const email = e.target.email.value;
-    console.log({ password, email });
-    const { data, error } = await authClient.signIn.email({
+    const image = e.target.image.value;
+    console.log({ name, password, email, image });
+    const { data, error } = await authClient.signUp.email({
+      name,
       email,
       password,
+      image,
       callbackURL: "/",
     });
     console.log({ data, error });
     if (data) {
-      toast.success("login successfully !!");
+      toast.success("Register successfully !!");
     }
     if (error) {
       toast.error(error.message);
     }
+    if (!error) {
+      router.push("/login");
+    }
   };
   return (
     <div>
-      <h2>Login</h2>
       <Form
-        onSubmit={handleLogin}
+        onSubmit={handleRegsister}
         className="flex w-96 flex-col gap-4 border p-4 my-4 rounded-xl"
       >
+        <TextField isRequired name="name" type="text">
+          <Label>name</Label>
+          <Input placeholder="Enter Your name" />
+          <FieldError />
+        </TextField>
         <TextField isRequired name="email" type="email">
           <Label>Email</Label>
           <Input placeholder="Enter your email" />
@@ -53,20 +65,21 @@ const LoginPages = () => {
           <FieldError />
         </TextField>
 
-        <div className="flex gap-2 items-center">
+        <TextField isRequired name="image" type="text">
+          <Label>Image url</Label>
+          <Input placeholder="Enter your Image url" />
+
+          <FieldError />
+        </TextField>
+        <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Login
+            Register
           </Button>
-          <Link href={"/register"}>
-            <p className="flex gap-1 items-center">
-              ? Or <span className="text-pink-500">Register</span>{" "}
-            </p>
-          </Link>
         </div>
       </Form>
     </div>
   );
 };
 
-export default LoginPages;
+export default LogOut;
