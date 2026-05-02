@@ -4,7 +4,7 @@ import React from "react";
 
 const AnimalDetails = async ({ params }) => {
   const { id } = await params;
-  const res = await fetch("https://livestock-booking-t6fo.vercel.app/cow.json");
+  const res = await fetch("https://livestock-booking-5dpp.vercel.app/cow.json");
   const cowes = await res.json();
   console.log(cowes);
   const animals = cowes.find((ani) => ani.id == id);

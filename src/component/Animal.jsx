@@ -2,7 +2,7 @@ import React from "react";
 import Cowcard from "./Cowcard";
 
 const Animal = async () => {
-  const res = await fetch("https://livestock-booking-t6fo.vercel.app/cow.json");
+  const res = await fetch("https://livestock-booking-5dpp.vercel.app/cow.json");
   const data = await res.json();
   const cowes = data.slice(0, 4);
   console.log(cowes);
