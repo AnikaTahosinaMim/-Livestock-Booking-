@@ -6,6 +6,7 @@ const Animal = async () => {
   const data = await res.json();
   const cowes = data.slice(0, 4);
   console.log(cowes);
+  // hello
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 my-8">
       {cowes.map((cow) => (
