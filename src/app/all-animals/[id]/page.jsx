@@ -1,6 +1,10 @@
 import Booking from "@/component/Booking";
 import Image from "next/image";
 import React from "react";
+export const metadata = {
+  title: "Booking Details",
+  description: "Perfect Quranbani Animals",
+};
 
 const AnimalDetails = async ({ params }) => {
   const { id } = await params;
@@ -11,8 +15,8 @@ const AnimalDetails = async ({ params }) => {
   console.log(animals);
   return (
     <div>
-      <div className="flex flex-col md:flex-row gap-10 border p-3 rounded-xl shadow-lg my-8">
-        <div className="relative w-[250px] aspect-square">
+      <div className="flex flex-col md:flex-row gap-10 border items-center p-3 rounded-xl shadow-lg my-8">
+        <div className="relative w-[300px] aspect-square">
           <Image
             src={animals.image}
             alt={animals.name}
@@ -25,8 +29,8 @@ const AnimalDetails = async ({ params }) => {
           <h2 className="font-semibold text-2xl">{animals.name}</h2>
           <p className=" font-semibold">{animals.description}</p>
           <div className="flex gap-1 items-center">
-            <span className="">{animals.category} ,</span>
-            <span className="">{animals.breed} ,</span>
+            <span className="font-bold">{animals.category} ,</span>
+            <span className="font-bold">{animals.breed} ,</span>
             <span className="font-bold">{animals.type}</span>
           </div>
           <div>
