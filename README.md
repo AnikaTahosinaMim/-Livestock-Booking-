@@ -69,11 +69,7 @@ The purpose of this project is to provide a simple and user-friendly platform fo
 
 ---
 
-## 🚀 Deployment
 
-The project is deployed on Vercel for fast and reliable hosting.
-
----
 
 
 
