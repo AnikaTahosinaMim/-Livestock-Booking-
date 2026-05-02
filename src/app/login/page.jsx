@@ -12,6 +12,7 @@ import {
 import { authClient } from "@/lib/auth-client";
 import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
+import { FaGoogle } from "react-icons/fa";
 
 const LoginPages = () => {
   const handleLogin = async (e) => {
@@ -73,7 +74,7 @@ const LoginPages = () => {
       <p className="font-bold ">Or</p>
       <p className="font-semibold mb-2"> countinue with google</p>
       <Button onClick={singInGoogle} variant="secondary">
-        singin with Google
+        <FaGoogle /> with Google
       </Button>
     </div>
   );

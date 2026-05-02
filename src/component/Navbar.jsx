@@ -19,19 +19,17 @@ const Navbar = () => {
   return (
     <div className="shadow-md border">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
             src={cowImg}
             alt="logo"
             width={40}
             height={40}
-            className="rounded-full"
+            className="rounded-full py-1"
           />
           <h1 className="font-bold text-lg">Livestock</h1>
         </div>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 font-medium">
           <li>
             <Link href="/">Home</Link>
@@ -44,7 +42,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Right Side (Desktop) */}
         <div className="hidden md:flex items-center gap-3">
           {!user ? (
             <>
@@ -68,7 +65,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
         <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
           ☰
         </button>

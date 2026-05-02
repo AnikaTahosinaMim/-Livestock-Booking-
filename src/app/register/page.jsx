@@ -12,6 +12,7 @@ import {
 import { authClient } from "@/lib/auth-client";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { FaGoogle } from "react-icons/fa";
 
 const LogOut = () => {
   const router = useRouter();
@@ -40,11 +41,11 @@ const LogOut = () => {
       router.push("/login");
     }
   };
-   const singInGoogle=async()=>{
-      const data = await authClient.signIn.social({
+  const singInGoogle = async () => {
+    const data = await authClient.signIn.social({
       provider: "google",
     });
-    }
+  };
   return (
     <div>
       <Form
@@ -86,7 +87,7 @@ const LogOut = () => {
       <p className="font-bold ">Or</p>
       <p className="font-semibold mb-2"> countinue with google</p>
       <Button onClick={singInGoogle} variant="secondary">
-        singin with Google
+        <FaGoogle /> with Google
       </Button>
     </div>
   );

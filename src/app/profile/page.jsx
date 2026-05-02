@@ -10,7 +10,7 @@ const Profiles = () => {
   console.log(user);
   return (
     <div>
-      <h3 className="text-xl font-bold text-center">My  profile</h3>
+      <h3 className="text-xl font-bold text-center my-4">My  profile</h3>
       <Card className="w-96 mx-auto flex  flex-col text-center items-center">
         <Avatar size="sm" className="w-25 h-25">
           <Avatar.Image
