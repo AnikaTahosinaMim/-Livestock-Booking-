@@ -19,7 +19,7 @@ const Navbar = () => {
           <Image src={cowImg} alt="cowimg" width={60} height={60}></Image>
         </div>
         <div>
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center gap-2">
             <li>
               <Link href={"/"}>Home</Link>
             </li>

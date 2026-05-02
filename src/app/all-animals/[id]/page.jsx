@@ -25,33 +25,23 @@ const AnimalDetails = async ({ params }) => {
           <span className="font-bold text-sm text-gray-300 bg-blue-950 px-2 py-1 rounded-full">
             {animals.type}
           </span>
-          <h2 className="font-semibold text-3xl text-gray-700">
-            {animals.name}
-          </h2>
-          <p className="text-gray-700 font-semibold">{animals.description}</p>
+          <h2 className="font-semibold text-2xl">{animals.name}</h2>
+          <p className=" font-semibold">{animals.description}</p>
           <div className="flex gap-1 items-center">
-            <span className="text-gray-800">{animals.category} ,</span>
-            <span className="text-gray-800">{animals.breed}</span>
+            <span className="">{animals.category} ,</span>
+            <span className="">{animals.breed}</span>
           </div>
           <div>
-            <p className="font-bold text-xl text-gray-700">
-              Price : {animals.price}
-            </p>
+            <p className="font-bold text-xl ">Price : {animals.price}</p>
             <div className="flex gap-1">
-              <p className="font-bold text-xl text-gray-700">
-                age : {animals.age} ,
-              </p>
-              <p className="font-bold text-xl text-gray-700">
-                weigth: {animals.weight}
-              </p>
+              <p className="font-bold text-xl ">age : {animals.age} ,</p>
+              <p className="font-bold text-xl ">weigth: {animals.weight}</p>
             </div>
-            <p className="font-bold text-xl text-gray-700">
-              Location : {animals.location}
-            </p>
+            <p className="font-bold text-xl ">Location : {animals.location}</p>
           </div>
         </div>
       </div>
-      <div >
+      <div>
         <Booking></Booking>
       </div>
     </div>
