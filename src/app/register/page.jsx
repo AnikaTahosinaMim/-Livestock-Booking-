@@ -40,6 +40,11 @@ const LogOut = () => {
       router.push("/login");
     }
   };
+   const singInGoogle=async()=>{
+      const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    }
   return (
     <div>
       <Form
@@ -78,6 +83,11 @@ const LogOut = () => {
           </Button>
         </div>
       </Form>
+      <p className="font-bold ">Or</p>
+      <p className="font-semibold mb-2"> countinue with google</p>
+      <Button onClick={singInGoogle} variant="secondary">
+        singin with Google
+      </Button>
     </div>
   );
 };

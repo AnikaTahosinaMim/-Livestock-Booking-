@@ -32,6 +32,11 @@ const LoginPages = () => {
       toast.error(error.message);
     }
   };
+  const singInGoogle = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+  };
   return (
     <div>
       <h2>Login</h2>
@@ -65,6 +70,11 @@ const LoginPages = () => {
           </Link>
         </div>
       </Form>
+      <p className="font-bold ">Or</p>
+      <p className="font-semibold mb-2"> countinue with google</p>
+      <Button onClick={singInGoogle} variant="secondary">
+        singin with Google
+      </Button>
     </div>
   );
 };
