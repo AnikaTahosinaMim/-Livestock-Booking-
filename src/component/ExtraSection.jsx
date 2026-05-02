@@ -1,45 +1,60 @@
-import React from "react";
+"use client";
+
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const ExtraSection = () => {
   return (
-    <div>
-      <ol className="list-decimal space-y-4 pl-5 text-gray-700">
-        <h2 className="text-xl font-bold mb-3">Qurbani Tips </h2>
-        <li className="animate__animated animate__rubberBand">
-          <strong className="animate__animated animate__fadeInDown">Check Animal Health</strong>
-          <p className="animate__animated animate__fadeInDown">
-            Make sure the animal is healthy, active, and free from any disease.
-            Check eyes, nose, and overall body condition.
-          </p>
-        </li>
+    <Parallax pages={2}>
 
-        <li>
-          <strong className="animate__animated animate__fadeInDown">Verify Age & Weight</strong>
-          <p  className="animate__animated animate__fadeInDown" >
-            Confirm the proper age and weight of the animal. Very young or weak
-            animals are not suitable for Qurbani.
-          </p>
-        </li>
+      {/* ===== PAGE 1 ===== */}
+      <ParallaxLayer offset={0} speed={0.5}>
+        <div className="p-10">
+          <h2 className="text-2xl font-bold mb-5">
+            Qurbani Tips
+          </h2>
 
-        <li>
-          <strong className="animate__animated animate__fadeInDown">Look for Active Behavior</strong>
-          <p className="animate__animated animate__fadeInDown">
-            Choose animals that are active and eat properly. Avoid lazy or
-            weak-looking animals.
-          </p>
-        </li>
-      </ol>
-      <div className="mt-6">
-        <h2 className="text-xl font-bold mb-3">Top Breeds</h2>
+          <ol className="list-decimal space-y-4 pl-5 text-gray-700">
+            <li>
+              <strong>Check Animal Health</strong>
+              <p>
+                Make sure the animal is healthy, active, and free from disease.
+              </p>
+            </li>
 
-        <ul className="list-disc pl-5 space-y-2 text-gray-700">
-          <li>Deshi Shahi Cow</li>
-          <li>Red Chittagong Cow</li>
-          <li>Holstein Friesian Cow</li>
-          <li>Black Bengal Goat</li>
-        </ul>
-      </div>
-    </div>
+            <li>
+              <strong>Verify Age & Weight</strong>
+              <p>
+                Confirm proper age and weight. Weak animals are not suitable.
+              </p>
+            </li>
+
+            <li>
+              <strong>Look for Active Behavior</strong>
+              <p>
+                Choose active animals that eat properly.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </ParallaxLayer>
+
+      {/* ===== PAGE 2 ===== */}
+      <ParallaxLayer offset={1} speed={0.5}>
+        <div className="p-10">
+          <h2 className="text-2xl font-bold mb-5">
+            Top Breeds
+          </h2>
+
+          <ul className="list-disc pl-5 space-y-2 text-gray-700">
+            <li>Deshi Shahi Cow</li>
+            <li>Red Chittagong Cow</li>
+            <li>Holstein Friesian Cow</li>
+            <li>Black Bengal Goat</li>
+          </ul>
+        </div>
+      </ParallaxLayer>
+
+    </Parallax>
   );
 };
 
