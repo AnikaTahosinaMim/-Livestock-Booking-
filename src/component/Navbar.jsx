@@ -48,11 +48,11 @@ const Navbar = () => {
             <div className="flex gap-2 items-center">
               <Avatar size="sm">
                 <Avatar.Image
-                  alt={user?.name.charAt(0)}
+                  alt="UserName"
                   src={user?.image}
                   referrerPolicy="no-referrer"
                 />
-                <Avatar.Fallback>JD</Avatar.Fallback>
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
               </Avatar>
               <Button onClick={handleLogout} variant="danger" size="sm">
                 LogOut
