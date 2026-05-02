@@ -12,7 +12,7 @@ const AnimalDetails = async ({ params }) => {
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-10 border p-3 rounded-xl shadow-lg my-8">
-        <div className="relative w-[200px] aspect-square">
+        <div className="relative w-[250px] aspect-square">
           <Image
             src={animals.image}
             alt={animals.name}
@@ -22,14 +22,12 @@ const AnimalDetails = async ({ params }) => {
           />
         </div>
         <div>
-          <span className="font-bold text-sm text-gray-300 bg-blue-950 px-2 py-1 rounded-full">
-            {animals.type}
-          </span>
           <h2 className="font-semibold text-2xl">{animals.name}</h2>
           <p className=" font-semibold">{animals.description}</p>
           <div className="flex gap-1 items-center">
             <span className="">{animals.category} ,</span>
-            <span className="">{animals.breed}</span>
+            <span className="">{animals.breed} ,</span>
+            <span className="font-bold">{animals.type}</span>
           </div>
           <div>
             <p className="font-bold text-xl ">Price : {animals.price}</p>
