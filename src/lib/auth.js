@@ -19,4 +19,12 @@ export const auth = betterAuth({
             clientSecret: process.env.GOOGLE_SECRATE, 
         }, 
     },
+     baseURL: {
+    allowedHosts: [
+      "livestock-booking-5dpp.vercel.app", 
+      "livestock-booking-xuig.vercel.app", 
+      "*.vercel.app"
+    ],
+    protocol: "https",
+  },
 });
