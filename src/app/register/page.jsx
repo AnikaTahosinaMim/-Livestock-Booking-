@@ -47,10 +47,10 @@ const LogOut = () => {
     });
   };
   return (
-    <div className="">
+    <div className="items-center justify-center mx-auto border rounded-xl shadow-lg gap-[30px] flex my-6">
       <Form
         onSubmit={handleRegsister}
-        className="flex w-96 flex-col gap-4 border p-4 my-4 rounded-xl"
+        className="flex w-96 flex-col gap-4  p-4 my-4 "
       >
         <TextField isRequired name="name" type="text">
           <Label>name</Label>

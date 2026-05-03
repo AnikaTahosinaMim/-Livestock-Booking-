@@ -39,7 +39,7 @@ const LoginPages = () => {
     });
   };
   return (
-    <div className="items-center justify-center mx-auto flex my-6">
+    <div className="items-center justify-center mx-auto  border rounded-xl shadow-lg gap-[30px] flex my-6">
       <Form
         onSubmit={handleLogin}
         className="flex w-96 flex-col gap-4 border p-4 my-4 rounded-xl"
