@@ -47,7 +47,7 @@ const LogOut = () => {
     });
   };
   return (
-    <div>
+    <div className="items-center justify-center flex mx-auto">
       <Form
         onSubmit={handleRegsister}
         className="flex w-96 flex-col gap-4 border p-4 my-4 rounded-xl"

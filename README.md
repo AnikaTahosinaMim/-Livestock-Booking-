@@ -15,33 +15,36 @@ It helps users easily find animals with proper details like price, breed, age, a
 
 ## ✨ Key Features
 
-* 🐄 Browse all available livestock
-* 🔍 View detailed information of each animal
-* 📦 Book animals بسهولة
-* 📱 Responsive design (Mobile & Desktop)
-* ⚡ Fast and optimized performance using Next.js
+🐄 Browse all available livestock animals
+🔍 View detailed animal information
+🔐 User authentication (Login / Logout)
+🌐 Google OAuth login system
+📱 Fully responsive UI (Mobile + Desktop)
+⚡ Fast performance with Next.js App Router
+🎨 Clean and modern UI with Tailwind CSS
+⏳ Loading UI for better user experience
 
 ---
 
 ## 📦 NPM Packages Used
 
-* `next`
-* `react`
-* `react-dom`
-* `tailwindcss`
-* `better-auth`
-* `mongodb`
-* `@heroui/react`
-* `animate.css`
-* `@lottiefiles/dotlottie-web`
+- `next`
+- `react`
+- `react-dom`
+- `tailwindcss`
+- `better-auth`
+- `mongodb`
+- `@heroui/react`
+- `animate.css`
+- `@lottiefiles/dotlottie-web`
 
 ---
 
 ## 🛠️ Technologies
 
-* Next.js
-* Tailwind CSS
-* MongoDB
-* Vercel (Deployment)
+- Next.js
+- Tailwind CSS
+- MongoDB
+- Vercel (Deployment)
 
 ---
