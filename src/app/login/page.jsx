@@ -70,11 +70,13 @@ const LoginPages = () => {
           </Link>
         </div>
       </Form>
-      <p className="font-bold ">Or</p>
-      <p className="font-semibold mb-2"> countinue with google</p>
-      <Button onClick={singInGoogle} variant="secondary">
-        <FaGoogle /> with Google
-      </Button>
+      <div>
+        <p className="font-bold ">Or</p>
+        <p className="font-semibold mb-2"> countinue with google</p>
+        <Button onClick={singInGoogle} variant="secondary">
+          <FaGoogle /> with Google
+        </Button>
+      </div>
     </div>
   );
 };

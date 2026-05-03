@@ -47,7 +47,7 @@ const LogOut = () => {
     });
   };
   return (
-    <div className="items-center justify-center flex mx-auto">
+    <div className="">
       <Form
         onSubmit={handleRegsister}
         className="flex w-96 flex-col gap-4 border p-4 my-4 rounded-xl"
@@ -84,11 +84,13 @@ const LogOut = () => {
           </Button>
         </div>
       </Form>
-      <p className="font-bold ">Or</p>
-      <p className="font-semibold mb-2"> countinue with google</p>
-      <Button onClick={singInGoogle} variant="secondary">
-        <FaGoogle /> with Google
-      </Button>
+      <div>
+        <p className="font-bold ">Or</p>
+        <p className="font-semibold mb-2"> countinue with google</p>
+        <Button onClick={singInGoogle} variant="secondary">
+          <FaGoogle /> with Google
+        </Button>
+      </div>
     </div>
   );
 };
