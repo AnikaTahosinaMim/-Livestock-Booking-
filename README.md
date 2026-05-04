@@ -36,7 +36,7 @@ It helps users easily find animals with proper details like price, breed, age, a
 - `mongodb`
 - `@heroui/react`
 - `animate.css`
-
+- `@lottiefiles/dotlottie-web`
 
 ---
 

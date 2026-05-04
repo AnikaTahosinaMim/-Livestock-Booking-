@@ -48,7 +48,7 @@ const LogOut = () => {
       provider: "google",
     });
     if (data) {
-      toast.success("login with google");
+      toast.success("register with google");
     }
   };
   return (
