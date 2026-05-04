@@ -20,11 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable}  h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <Toaster position="top-center" />
+
         <Navbar></Navbar>
-        <main className="container mx-auto">
-          {children}
-          <Toaster />
-        </main>
+        <main className="container mx-auto">{children}</main>
         <Footer></Footer>
       </body>
     </html>

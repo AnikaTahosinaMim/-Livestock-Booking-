@@ -15,14 +15,14 @@ It helps users easily find animals with proper details like price, breed, age, a
 
 ## ✨ Key Features
 
-🐄 Browse all available livestock animals
-🔍 View detailed animal information
-🔐 User authentication (Login / Logout)
-🌐 Google OAuth login system
-📱 Fully responsive UI (Mobile + Desktop)
-⚡ Fast performance with Next.js App Router
-🎨 Clean and modern UI with Tailwind CSS
-⏳ Loading UI for better user experience
+- 🐄 Browse all available livestock animals
+- 🔍 View detailed animal information
+- 🔐 User authentication (Login / Logout)
+- 🌐 Google OAuth login system
+- 📱 Fully responsive UI (Mobile + Desktop)
+- ⚡ Fast performance with Next.js App Router
+- 🎨 Clean and modern UI with Tailwind CSS
+- ⏳ Loading UI for better user experience
 
 ---
 
@@ -36,7 +36,7 @@ It helps users easily find animals with proper details like price, breed, age, a
 - `mongodb`
 - `@heroui/react`
 - `animate.css`
-- `@lottiefiles/dotlottie-web`
+
 
 ---
 

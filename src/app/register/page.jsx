@@ -13,6 +13,7 @@ import { authClient } from "@/lib/auth-client";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { FaGoogle } from "react-icons/fa";
+import Link from "next/link";
 
 const LogOut = () => {
   const router = useRouter();
@@ -36,6 +37,7 @@ const LogOut = () => {
     }
     if (error) {
       toast.error(error.message);
+      return;
     }
     if (!error) {
       router.push("/login");
@@ -45,12 +47,15 @@ const LogOut = () => {
     const data = await authClient.signIn.social({
       provider: "google",
     });
+    if (data) {
+      toast.success("login with google");
+    }
   };
   return (
-    <div className="items-center justify-center mx-auto border rounded-xl shadow-lg gap-[30px] flex my-6">
+    <div className="items-center justify-center mx-auto border rounded-xl shadow-lg  gap-5 md:gap-[30px] flex flex-col md:flex-row  my-6">
       <Form
         onSubmit={handleRegsister}
-        className="flex w-96 flex-col gap-4  p-4 my-4 "
+        className="flex w-96 flex-col gap-4 border rounded-lg  p-4 my-4 "
       >
         <TextField isRequired name="name" type="text">
           <Label>name</Label>
@@ -82,6 +87,13 @@ const LogOut = () => {
             <Check />
             Register
           </Button>
+          <p className="flex gap-1 items-center">
+            Or{" "}
+            <Link href={"/login"}>
+              {" "}
+              <span className="text-pink-500">Login</span>
+            </Link>{" "}
+          </p>
         </div>
       </Form>
       <div>
